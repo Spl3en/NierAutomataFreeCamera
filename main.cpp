@@ -68,10 +68,12 @@ int main (int argc, char **argv)
     switch (data) {
         case 0:
             // Unpatched
+            MessageBox(NULL, "Free camera is enabled!", "NieR:Automata", 0);
             new_data = 0x80000000;
         break;
 
         default:
+            MessageBox(NULL, "Free camera is disabled!", "NieR:Automata", 0);
             // Patch, back to normal
             new_data = 0;
         break;
