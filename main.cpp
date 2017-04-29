@@ -1,3 +1,4 @@
+// Credits to @Wunkolo (https://twitter.com/Wunkolo/status/843387447656435712)
 #include <windows.h>
 #include <tlhelp32.h>
 #include <cstdint>
@@ -54,8 +55,7 @@ int main (int argc, char **argv)
     HANDLE hNier = GetHandleFromName ("NieRAutomata.exe");
 
     // Check patch state
-    // Thanks to @Wunkolo (https://twitter.com/Wunkolo/status/843387447656435712)
-    LPVOID address = (void *) 0x1413FC410;
+    LPVOID address = (void *) 0x141415B90;
     std::uint64_t data;
     SIZE_T bytes_read;
 
